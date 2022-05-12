@@ -1,0 +1,20 @@
+name: devopted
+services:
+  devopted:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    image: docker.io/sc250024/devopted-site:latest
+    ports:
+      - mode: ingress
+        target: 8000
+        published: 8000
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: ./src
+        target: /app
+      - type: bind
+        source: ./.git
+        target: /app/.git
