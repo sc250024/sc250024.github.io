@@ -1,0 +1,76 @@
+dev_addr: 0.0.0.0:8000
+edit_uri: edit/main/src/docs/
+extra:
+  analytics:
+    property: G-314815531
+    provider: google
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sc250024
+      name: sc250024 on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/jshcrooks
+      name: jshcrooks on LinkedIn
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - meta
+  - pymdownx.emoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - toc:
+      permalink: "#"
+nav:
+  - Home: index.md
+plugins:
+  - search:
+      prebuild_index: python
+  - git-revision-date
+repo_name: sc250024.github.io
+repo_url: https://github.com/sc250024/sc250024.github.io
+site_name: DevOpted
+site_url: https://devopted.io
+strict: false
+theme:
+  features:
+    - git-revision-date-localized:
+        enable_creation_date: true
+        fallback_to_build_date: true
+        type: iso_datetime
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.tracking
+    - search.highlight
+  font:
+    code: IBM Plex Mono
+    text: Roboto
+  icon:
+    repo: fontawesome/brands/github
+  language: en
+  name: material
+  palette:
+    - accent: blue
+      media: "(prefers-color-scheme: light)"
+      primary: pink
+      scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - accent: blue
+      media: "(prefers-color-scheme: dark)"
+      primary: pink
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+use_directory_urls: true

@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+lunr = "*"
+mkdocs = "*"
+mkdocs-git-revision-date-localized-plugin = "*"
+mkdocs-git-revision-date-plugin = "*"
+mkdocs-material = "==8.*"
+mkdocs-minify-plugin = "*"
+
+[dev-packages]
+black = "*"
+isort = "*"
+
+[requires]
+python_version = "3.10"
