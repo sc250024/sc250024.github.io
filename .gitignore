@@ -1,0 +1,17 @@
+# ------------------------------------------------------------------------------------------
+# Hugo
+# ------------------------------------------------------------------------------------------
+
+# Generated files by hugo
+/devopted/public/
+/devopted/resources/_gen/
+/devopted/assets/jsconfig.json
+/devopted/hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/devopted/.hugo_build.lock
